@@ -1,0 +1,31 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SolitareG00402138Repeat.MainPage">
+
+    <Grid HeightRequest="1800" WidthRequest="2000" BackgroundColor="Cyan" Margin="20, 20, 20, 20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        
+            <ColumnDefinition Width="Auto" />
+         
+           
+        </Grid.ColumnDefinitions>
+
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center" >
+            <Label Text="Solitaire Game" Margin="5,5,5,5" FontSize="24" HorizontalOptions="Start" VerticalOptions="Start" BackgroundColor="Goldenrod" />
+            <Button Text="Reset" Clicked="resetBtn" WidthRequest="70" HeightRequest="40" VerticalOptions="Center"
+                    HorizontalOptions="Center" BackgroundColor="Coral" Margin="5,5,5,5"/>
+            <Button Text="Instructions" Clicked="instructionsMenu"  WidthRequest="120" HeightRequest="40" VerticalOptions="Center"
+                    HorizontalOptions="Center" BackgroundColor="Coral"/>
+            <Label x:Name="RemovedMarblesLabel" Text="Removed Marbles: 0" />
+            <Label x:Name="MarblesLeft" Text="Marbles Left: 32"/> 
+
+
+            <Grid x:Name="gameTable" BackgroundColor="#a35c00" Margin="10,10,10,10"  HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="600" WidthRequest="600">
+                <Button Text="Save" Clicked="saveGame" HeightRequest="40" WidthRequest="70" HorizontalOptions="Start"
+                        VerticalOptions="Start"/>
+            </Grid>
+           
+        </StackLayout>
+    </Grid >
+</ContentPage>
